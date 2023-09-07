@@ -30,7 +30,7 @@ html, body{
 
 .header-image {
     border-radius: 173px;
-    width: 200px;
+    width: 300px;
     border: 10px solid #5C090C;
 }
 
@@ -38,6 +38,7 @@ html, body{
     color: red;
     margin-top: 1rem;
 }
+
 
 .main-content {
     background-color: #EAF1F9;
@@ -54,12 +55,11 @@ html, body{
     flex: 1;
     padding: 2rem;
     text-align: center;
-    max-width: 900px;
+    max-width: 600px;
 }
 
 .character-image {
-    width: 500px; 
-    height: 500px;
+    width: 450px;
 }
 
 
@@ -284,7 +284,6 @@ html, body{
 
     .character-image {
         width: 200px;
-        height: 500px;
     }
 
     .character-details {
