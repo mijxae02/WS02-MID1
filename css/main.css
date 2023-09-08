@@ -21,15 +21,12 @@
   font-family: patrick;
   src: url(../font/spongeboy_me_bob/Spongeboy\ Me\ Bob.ttf)
 }
-
  
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-
 
 html, body{
     padding: 0;
@@ -39,7 +36,7 @@ html, body{
 }
 
 .header {
-    background-image: url("../img/spider-man-into-the-spider-verse_1920x1080_xtrafondos.com.jpg");
+    background-image: url("../img/spidey-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -86,7 +83,6 @@ html, body{
     width: 450px;
 }
 
-
 .character-details {
     flex: 1;
     padding: 0.5rem;
@@ -123,7 +119,6 @@ html, body{
     margin-bottom: 1rem;
 }
 
-
 .image-container {
     display: flex;
     justify-content: space-between;
@@ -143,37 +138,44 @@ html, body{
     margin-top: 0.5rem;
 }
 
-.friends {
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 10px;
-    text-align: center;
-    color: red;
-  }
-  .friends .row {
-    display: flex;
-    justify-content: space-around;
-  }
+.caption {
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  color: rgb(169, 169, 169);
+}
 
-  .friends .row .col-lg-4 {
-    display: flex;
-    justify-content: center;
-  }
+.friends {
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: center;
+  color: red;
+}
+
+.friends .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.friends .row .col-lg-4 {
+  display: flex;
+  justify-content: center;
+}
   
-  .card {
-    background-color: black;
-    position: relative;
-    padding: 0;
-    margin: 0 !important;
-    border-radius: 20px;
-    overflow: hidden;
-    min-width: 230px;
-    max-width: 280px;
-    max-height: 340px;
-    cursor: pointer;
-    border: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  }
+.card {
+  background-color: black;
+  position: relative;
+  padding: 0;
+  margin: 0 !important;
+  border-radius: 20px;
+  overflow: hidden;
+  min-width: 230px;
+  max-width: 280px;
+  max-height: 340px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
 
   .pt-1 {
   font-family: asta;
@@ -371,10 +373,6 @@ html, body{
   .gif{
     display: flex;
   }
-  .character-image {
-    width: 200px;
-    height: 300px;
-}
 }
 
 @media screen and (max-width: 850px) {
@@ -386,7 +384,8 @@ html, body{
   }
 
   .header-image {
-      width: 90px;
+      border-radius: 173px;
+      width: 183px;
       border: 3px solid black;
   }
 
@@ -398,10 +397,6 @@ html, body{
   .character-section {
       flex-direction: column;
       align-items: center;
-  }
-
-  .character-image {
-      width: 100px;
   }
 
   .character-details {
