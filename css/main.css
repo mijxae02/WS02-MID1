@@ -284,17 +284,6 @@ html, body{
     font-size: 1.3rem;
   }
   
-@media only screen and (max-width: 1000px) {
-    .friends .row {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .friends a {
-      margin-top: 20px;
-    }
-  }
-
 .footer {
     text-align: center;
     padding: 2rem 0;
@@ -305,55 +294,90 @@ html, body{
 .footer-text {
     margin: 0;
     font-size: 1rem;
-    font-family: arial, san-serif;
+    font-family: patrick;
 }
 
-@media (max-width: 1000px) {
-    .header {
-        padding: 4rem 0;
-        width: 100%;
-    }
-    
-    .header-image {
-        width: 130px;
-        border: 5px solid black;
-    }
+.jim{
+  color: white;
+}
 
-    .header-title {
-        font-size: 2rem;
+@media only screen and (max-width: 460px) {
+    .friends .row {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-
+    .friends a {
+      margin-top: 30px;
+    }
+  
     .character-section {
-        flex-direction: column;
-        align-items: center;
-        font-size: 2rem;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
     }
+  
     .character-image {
-        width: 150px;
+      width: 300px;
+      height: 400px;
     }
+  }
 
-    .character-details {
-        padding: 1rem;
-    }
+@media (max-width: 850px) {
+  .header {
+      padding: 5rem 0;
+      width: 100%;
+  }
+  
+  .header-image {
+      width: 145px;
+      border: 5px solid black;
+  }
 
-    .character-heading {
-        font-size: 1.5rem;
-    }
+  .header-title {
+      font-size: 2rem;
+  }
 
-    .character-description {
-        font-size: 1rem;
-    }
+  .character-section {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 5%;
+  }
 
-    .characteristics-list {
-        font-size: 1rem;
-    }
+  .character-image {
+      width: 300px;
+      height: 300px;
+  }
 
-    .image-section {
-        padding: 0.5rem 0;
-    }
+  .character-details {
+      padding: 1rem;
+  }
+
+  .character-heading {
+      font-size: 1.5rem;
+  }
+
+  .character-description {
+      font-size: 1rem;
+  }
+
+  .characteristics-list {
+      font-size: 1rem;
+  }
+
+  .image-section {
+      padding: 0.5rem 0;
+  }
+  .gif{
+    display: flex;
+  }
+  .character-image {
+    width: 200px;
+    height: 300px;
+}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 850px) {
   .header {
       padding: 2rem 0;
       width: 100%;
@@ -399,16 +423,6 @@ html, body{
   .image-section {
       padding: 0.5rem 0;
   }
-
-  .friends .row {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .friends .row .col-lg-4 {
-      margin-bottom: 1rem;
-  }
-
   .card {
       max-width: 90%;
   }
