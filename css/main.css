@@ -3,6 +3,26 @@
     src: url(../font/homoarakhan/spidey.TTF);
     }
 
+@font-face {
+      font-family: asta;
+      font-style: normal;
+      font-weight: 400;
+      src: local('Black Clover Font'), url('https://fonts.cdnfonts.com/s/33197/Black Clover Font.woff') format('woff');
+}
+    
+@font-face {
+      font-family: mario;
+      font-style: normal;
+      font-weight: 400;
+      src: local('New Super Mario Font U'), url('https://fonts.cdnfonts.com/s/32226/New Super Mario Font U.woff') format('woff');
+}
+
+@font-face {
+  font-family: patrick;
+  src: url(../font/spongeboy_me_bob/Spongeboy\ Me\ Bob.ttf)
+}
+
+ 
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,7 +39,7 @@ html, body{
 }
 
 .header {
-    background-image: url("../img/bg.jpg");
+    background-image: url("../img/spider-man-into-the-spider-verse_1920x1080_xtrafondos.com.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -31,14 +51,18 @@ html, body{
 .header-image {
     border-radius: 173px;
     width: 300px;
-    border: 10px solid #5C090C;
+    border: 10px solid black;
 }
 
 .header-title {
-    color: red;
+    color: white;
     margin-top: 1rem;
 }
 
+.gif{
+  height: 8%;
+  width: 8%;
+}
 
 .main-content {
     background-color: #EAF1F9;
@@ -95,7 +119,6 @@ html, body{
 }
 
 .image-section h2 {
-    font-size: 2rem;
     color: red;
     margin-bottom: 1rem;
 }
@@ -150,9 +173,33 @@ html, body{
     cursor: pointer;
     border: none;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    font-family: Arial, Helvetica, sans-serif;
   }
-  
+
+  .pt-1 {
+  font-family: asta;
+  }
+
+  .asta {
+    font-family: asta;
+  }
+
+  .pt-2 {
+    font-family: 'New Super Mario Font U';
+  }
+
+  .mario {
+    font-family: 'New Super Mario Font U';
+  }
+
+  .pt-3{
+    font-family: patrick;
+  }
+
+  .pat{
+    font-family: patrick;
+  }
+
+
   .card .card-image {
     width: 100%;
     max-height: 340px;
@@ -237,7 +284,7 @@ html, body{
     font-size: 1.3rem;
   }
   
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     .friends .row {
       display: flex;
       flex-direction: column;
@@ -261,14 +308,14 @@ html, body{
     font-family: arial, san-serif;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
     .header {
         padding: 4rem 0;
         width: 100%;
     }
     
     .header-image {
-        width: 145px;
+        width: 130px;
         border: 5px solid black;
     }
 
@@ -279,11 +326,10 @@ html, body{
     .character-section {
         flex-direction: column;
         align-items: center;
-        padding: 0 5%;
+        font-size: 2rem;
     }
-
     .character-image {
-        width: 200px;
+        width: 150px;
     }
 
     .character-details {
@@ -305,4 +351,69 @@ html, body{
     .image-section {
         padding: 0.5rem 0;
     }
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+      padding: 2rem 0;
+      width: 100%;
+      background-size: auto;
+      background-position: top;
+  }
+
+  .header-image {
+      width: 90px;
+      border: 3px solid black;
+  }
+
+  .header-title {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+  }
+
+  .character-section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .character-image {
+      width: 100px;
+  }
+
+  .character-details {
+      padding: 1rem;
+  }
+
+  .character-heading {
+      font-size: 1.2rem;
+  }
+
+  .character-description {
+      font-size: 1rem;
+  }
+
+  .characteristics-list {
+      font-size: 1rem;
+  }
+
+  .image-section {
+      padding: 0.5rem 0;
+  }
+
+  .friends .row {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .friends .row .col-lg-4 {
+      margin-bottom: 1rem;
+  }
+
+  .card {
+      max-width: 90%;
+  }
+
+  .footer {
+      padding: 1rem 0;
+  }
 }
